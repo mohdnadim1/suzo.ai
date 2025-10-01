@@ -12,7 +12,7 @@ class ChatbotEngine:
 
         # Join the history with the model's end-of-string token to create the prompt.
         # This is the format DialoGPT expects.
-        prompt = "".join(self.conversation_history) + self.chatbot.tokenizer.eos_token
+        prompt = self.chatbot.tokenizer.eos_token.join(self.conversation_history) + self.chatbot.tokenizer.eos_token
 
         # Generate the response.
         response = self.chatbot(prompt, max_length=1000, pad_token_id=self.chatbot.tokenizer.eos_token_id)
@@ -22,6 +22,6 @@ class ChatbotEngine:
         bot_response = full_response[len(prompt):].strip()
 
         # Append the bot's response to the history for the next turn.
-        self.conversation_history.append(bot_response + self.chatbot.tokenizer.eos_token)
+        self.conversation_history.append(bot_response)
 
         return bot_response
