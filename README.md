@@ -1,6 +1,6 @@
-# Suzo.ai - A Modular AI Framework
+# Suzo.dev - A Modular AI Framework
 
-Suzo.ai is a modular and extensible AI framework for text generation, chatbot engines, and image classification. Built with PyTorch and HuggingFace Transformers, it provides a simple interface for training, evaluating, and deploying state-of-the-art AI models.
+Suzo.dev is a modular and extensible AI framework for text generation, chatbot engines, and image classification. Built with PyTorch and HuggingFace Transformers, it provides a simple interface for training, evaluating, and deploying state-of-the-art AI models.
 
 ## Features
 
@@ -12,11 +12,11 @@ Suzo.ai is a modular and extensible AI framework for text generation, chatbot en
 
 ## Installation
 
-To install Suzo.ai, clone the repository and install the required dependencies:
+To install Suzo.dev, clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/your-username/suzo.ai.git
-cd suzo.ai
+git clone https://github.com/your-username/suzo.dev.git
+cd suzo.dev
 pip install -r requirements.txt
 ```
 
@@ -57,7 +57,7 @@ print(f"The image is classified as: {label}")
 ## Project Structure
 
 ```
-suzo.ai/
+suzo.dev/
 ├── api/
 │   └── server.py
 ├── examples/

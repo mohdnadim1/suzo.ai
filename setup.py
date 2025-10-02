@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="suzo.ai",
+    name="suzo.dev",
     version="0.1.0",
     description="A modular AI framework for text generation, chatbot engines, and image classification.",
     author="Your Name",
     author_email="your.email@example.com",
-    url="https://github.com/your-username/suzo.ai",
+    url="https://github.com/your-username/suzo.dev",
     packages=find_packages(),
     install_requires=[
         "torch",
